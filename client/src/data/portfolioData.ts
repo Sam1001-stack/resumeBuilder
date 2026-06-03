@@ -5,10 +5,10 @@ import resumeAiImage from "@/assets/images/resume-ai.png";
 
 export const profileData = {
   name: "Zaeem Uz Zafar",
-  title: "Backend Engineer | MERN & PERN Stack | Remote & Freelance",
-  bio: "Backend Engineer with expertise in MERN and PERN stack applications. Specialized in building robust backend systems using Node.js, Express.js, Nest.js with MongoDB, MySQL, and PostgreSQL. Skilled in implementing both HTTP and WebSocket for real-time applications. Open to remote, part-time, and freelance opportunities across Europe and the USA, delivering scalable, efficient, and high-quality backend solutions.",
+  title: "FullStack Engineer | Backend Engineer | MERN & PERN + Python Stack | Remote & Freelance | AI Tools",
+  bio: "Backend Engineer with expertise in MERN and PERN stack applications. Specialized in building robust backend systems using Node.js, Express.js, Python , FastApi  with MongoDB, MySQL, and PostgreSQL. Skilled in implementing both HTTP and WebSocket for real-time applications. Open to remote, part-time, and freelance opportunities across Europe and the USA, delivering scalable, efficient, and high-quality backend solutions.",
   email: "zafarzaeemmern@gmail.com",
-  phone: "+49 163 652 15 60",
+  phone: "+49 178 336 72 52",
   location: "Berlin, Germany",
   socialLinks: {
     github: "https://github.com/Sam1001-stack",
@@ -20,7 +20,7 @@ export const profileData = {
 export const skillsData = [
   {
     title: "Backend Development",
-    description: "Node.js, Express.js, Nest.js, RESTful APIs, WebSockets for real-time applications, MongoDB, MySQl, PostgreSQL."
+    description: "Node.js, Express.js, Python , FastApi , RESTful APIs, WebSockets for real-time applications, MongoDB, MySQl, PostgreSQL."
   },
   {
     title: "Frontend Development",
@@ -32,15 +32,19 @@ export const skillsData = [
   },
   {
     title: "API Development",
-    description: "Developing and integrating RESTful APIs, Open AI , HTTP protocols, real-time communication."
+    description: "Developing and integrating RESTful APIs, Open AI , Gemini AI , HTTP protocols, real-time communication."
   },
   {
     title: "Deployment & DevOps",
-    description: "Heroku, Vercel , cPanel, Git version control, CI/CD workflows."
+    description: "Heroku, Vercel , cPanel, Render , Railway , Git version control, CI/CD workflows."
   },
   {
     title: "Software Development",
-    description: "Full-stack application architecture, dashboard development, webApp and website integrations."
+    description: "Full-stack application architecture, dashboard development, theme integration , webApp and website integrations, API integrations, SEO optimization, performance optimization, security optimization, scalability optimization, etc."
+  },
+  {
+    title: "AI Tools",
+    description: "Cursor, Claude, Gemini, OpenAI,  Google AI, Lovable AI, Antigravity , etc. for code generation and development."
   }
 ];
 
@@ -77,6 +81,12 @@ export const certificationData = [
     year: "Jan 2022 - Feb 2023",
     institution: "Udemy",
     description: "In-depth Node js with framework Express js and Mongodb."
+  },
+  {
+    degree: "Ai Complete Course",
+    year: "Jun 2026 - Dec 2026",
+    institution: "Udemy",
+    description: "Including Generative and Agentic AI"
   },
 ]
 
