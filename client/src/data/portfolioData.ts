@@ -117,7 +117,7 @@ export const projectsData = [
     description: "A real-time financial analytics dashboard for tracking revenue, expenses, cash flow, and KPIs with interactive charts, role-based access, and exportable reports for finance teams.",
     image: financialDashboardImage,
     technologies: ["React", "Redux", "Node.js", "Express", "PostgreSQL", "Chart.js"],
-    demoLink: "https://private-debt-investor.vercel.app/",
+    demoLink: "https://private-debt-investor-frontend.vercel.app/",
     codeLink: "https://github.com/annikasassistant-byte/Private-Debt-Investor-Frontend",
     isFeatured: false,
   },
