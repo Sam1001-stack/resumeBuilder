@@ -2,6 +2,14 @@ import syrenadateImage from "@/assets/images/syrenadate.png";
 import chillnparkImage from "@/assets/images/chillnpark.png";
 import cardiiImage from "@/assets/images/cardii.png";
 import resumeAiImage from "@/assets/images/resume-ai.png";
+import financialDashboardImage from "@/assets/images/financial-dashboard.png";
+import aiCrmImage from "@/assets/images/ai-crm.png";
+import warehouseLogisticsImage from "@/assets/images/warehouse-logistics.png";
+import aiEcommerceImage from "@/assets/images/ai-ecommerce-enterprise.png";
+import marketplaceAdminImage from "@/assets/images/marketplace-admin.png";
+import marketplaceVendorImage from "@/assets/images/marketplace-vendor.png";
+import marketplaceAndroidImage from "@/assets/images/marketplace-android.png";
+import marketplaceIosImage from "@/assets/images/marketplace-ios.png";
 
 export const profileData = {
   name: "Zaeem Uz Zafar",
@@ -92,12 +100,62 @@ export const certificationData = [
 
 export const projectsData = [
   {
+    title: "Marketplace Multi Vendor App",
+    description: "A full multi-vendor marketplace merging Admin, Vendor, and native mobile apps (iOS & Android). Admins manage vendors, products, orders, payments, and commissions; vendors run their store with inventory, shipping, and earnings; customers shop via React Native apps with cart, checkout, wallet, and order tracking.",
+    image: marketplaceAdminImage,
+    images: [marketplaceAdminImage, marketplaceVendorImage, marketplaceAndroidImage, marketplaceIosImage],
+    technologies: ["React", "React Native", "Redux", "Node.js", "Express", "MongoDB", "Stripe"],
+    demoLink: "https://market-place-admin-orcin.vercel.app/",
+    v_demoLink: "https://market-place-vendor-mauve.vercel.app/",
+    codeLink: "https://github.com/Sam1001-stack/Market_Place_User_Mobile_App",
+    v_codeLink: "https://github.com/Sam1001-stack/Market_Place_Vendor",
+    a_codeLink: "https://github.com/Sam1001-stack/Market_Place_Admin",
+    isFeatured: true,
+  },
+  {
+    title: "Financial Dashboard",
+    description: "A real-time financial analytics dashboard for tracking revenue, expenses, cash flow, and KPIs with interactive charts, role-based access, and exportable reports for finance teams.",
+    image: financialDashboardImage,
+    technologies: ["React", "Redux", "Node.js", "Express", "PostgreSQL", "Chart.js"],
+    demoLink: "https://private-debt-investor.vercel.app/",
+    codeLink: "https://github.com/annikasassistant-byte/Private-Debt-Investor-Frontend",
+    isFeatured: false,
+  },
+  {
+    title: "AI CRM",
+    description: "An AI-powered CRM that manages leads, contacts, and pipelines with smart lead scoring, automated follow-ups, email insights, and predictive recommendations for sales teams.",
+    image: aiCrmImage,
+    technologies: ["Next.js", "Node.js", "Express", "MongoDB", "OpenAI", "Redux RTK Query"],
+    demoLink: "https://ai-crm-puce-psi.vercel.app/",
+    codeLink: "https://github.com/Sam1001-stack/AI-CRM",
+    isFeatured: false,
+  },
+  {
+    title: "AI Ecommerce Enterprise",
+    description: "An enterprise e-commerce platform with AI product recommendations, smart inventory forecasting, multi-vendor support, order management, and Stripe-powered payments at scale.",
+    image: aiEcommerceImage,
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe", "OpenAI", "Redis"],
+    demoLink: "https://ai-ecommerce-enterprices.vercel.app",
+    codeLink: "https://github.com/Sam1001-stack/Ai-Ecommerce-Enterprices",
+    isFeatured: false,
+  },
+  {
+    title: "Warehouse Logistics",
+    description: "A warehouse logistics system for inventory tracking, inbound/outbound shipments, barcode scanning, route planning, and real-time stock visibility across multiple warehouses.",
+    image: warehouseLogisticsImage,
+    technologies: ["React", "Node.js", "Express", "PostgreSQL", "Prisma", "WebSockets"],
+    demoLink: "https://warehouse-logistics-two.vercel.app",
+    codeLink: "https://github.com/Sam1001-stack/Warehouse-Logistics",
+    isFeatured: false,
+  },  
+  {
     title: "TalentSync AI",
     description: "An AI-powered resume platform where candidates build ATS-friendly resumes with coverletter from their details and export PDFs in one go in English and Dutch, with European language support planned. Candidates paste a job description with their profile to generate and save a tailored resume. HR pastes a job description with job details, uploads bulk candidate resumes, and AI ranks the top 10 matches by skills, experience, and education scoring—then sends Zoom interview invites to selected candidates. also show rejecetd candidates and show rejected reasons. Subscription-based access for HR and candidates.",
     image: resumeAiImage,
     technologies: ["Next.js", "Redux RTK Query", "Node.js", "Express", "MongoDB", "Pinecone", "RAG", "OpenAI", "Gemini AI"],
     demoLink: "https://german-resume-ai-builder.vercel.app/de",
     codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Syrena Date",
@@ -106,6 +164,7 @@ export const projectsData = [
     technologies: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Mongoose", "Agora", "Stripe"],
     demoLink: "https://react.customdev.solutions/syrenadate/",
     codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Chill N Park",
@@ -114,6 +173,7 @@ export const projectsData = [
     technologies: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Google Maps API", "WebSockets"],
     demoLink: "https://react.customdev.solutions/chill_n_park/admin/signin",
     codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Cardii",
@@ -122,6 +182,7 @@ export const projectsData = [
     technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "Stripe", "Smile ID"],
     demoLink: "https://react.customdev.solutions/cardii/",
     codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "100Square Games",
@@ -130,6 +191,7 @@ export const projectsData = [
     technologies: ["React", "Node.js", "Express", "MongoDB", "WebSockets"],
     demoLink: "https://100squaregames.example.com/",
     codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Petwarehouse",
@@ -138,6 +200,7 @@ export const projectsData = [
     technologies: ["React", "Redux", "Node.js", "Express", "MongoDB"],
     demoLink: "https://petwarehouse.example.com/",
     codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Genematric",
@@ -146,6 +209,7 @@ export const projectsData = [
     technologies: ["React", "Node.js", "Express", "PostgreSQL", "Prisma"],
     demoLink: "https://genematric.example.com/",
     codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Eve Doctor",
@@ -154,6 +218,7 @@ export const projectsData = [
     technologies: ["React", "Node.js", "Express", "MongoDB", "WebSockets"],
     demoLink: "https://evedoctor.example.com/",
     codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "The BMET Medical Posting Community",
@@ -162,6 +227,7 @@ export const projectsData = [
     technologies: ["React", "Redux", "Node.js", "Express", "MongoDB"],
     demoLink: "https://bmetmedical.example.com/",
     codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Center Piece",
@@ -170,6 +236,7 @@ export const projectsData = [
     technologies: ["React", "Express" , "Redux", "Node.js", "MongoDB"],
     demoLink: "https://react.customdev.solutions/centerpiece/",
     codeLink: "https://github.com",
+    isFeatured: false,
 
   },
     {
@@ -179,7 +246,7 @@ export const projectsData = [
     technologies: ["React", "Express" , "Redux", "Node.js", "MongoDB"],
     demoLink: "https://react.customdev.solutions/168ecommerce/",
     codeLink: "https://github.com",
-
+    isFeatured: false,
   },
   {
     title: "Predivauth",
@@ -188,6 +255,7 @@ export const projectsData = [
     technologies: ["React", "Redux", "Node.js", "MongoDB"],
     demoLink: "https://predivauthmarketplace.com/",
     codeLink: "https://github.com",
+    isFeatured: false,
 
   },
   {
@@ -196,7 +264,8 @@ export const projectsData = [
     image: "https://res.cloudinary.com/ft-bounty/image/upload/c_fill,g_auto/v1747120883079/nvft-user-files/production/f4d68c35-0109-4d3d-a28a-7ab7f881256a/uploads/669aa122-6137-4894-9fd2-453ea0ba3a8c/original.png",
     technologies: ["React", "Node.js", "Express", "MongoDB", "WebSockets"],
     demoLink: "https://instapet.co/",
-    codeLink: "https://github.com"
+    codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Pet Care",
@@ -204,7 +273,9 @@ export const projectsData = [
     image: "https://res.cloudinary.com/ft-bounty/image/upload/c_fill,g_auto/v1747120998995/nvft-user-files/production/f4d68c35-0109-4d3d-a28a-7ab7f881256a/uploads/4d7cde34-0fd4-49c4-836e-dc0a546cdac8/original.png",
     technologies: ["React", "Node.js", "Express", "PostgreSQL", "Prisma"],
     demoLink: "https://react.customdev.solutions/dogcare/",
-    codeLink: "https://github.com"
+    codeLink: "https://github.com",
+    isFeatured: false,
+
   },
   {
     title: "Laundry",
@@ -212,7 +283,8 @@ export const projectsData = [
     image: "https://res.cloudinary.com/ft-bounty/image/upload/c_fill,g_auto/v1747065059962/nvft-user-files/production/f4d68c35-0109-4d3d-a28a-7ab7f881256a/uploads/fbe64e9f-c985-447d-b774-f5021d776e52/original.octet-stream",
     technologies: ["Node.js", "Express", "MongoDB", "Mongoose"],
     demoLink: "https://react.customdev.solutions/laundry/",
-    codeLink: "https://github.com"
+    codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Golden Love",
@@ -220,7 +292,9 @@ export const projectsData = [
     image: "https://res.cloudinary.com/ft-bounty/image/upload/c_fill,g_auto/v1747065348349/nvft-user-files/production/f4d68c35-0109-4d3d-a28a-7ab7f881256a/uploads/12f15841-c0d9-4466-aa0e-a5228138cff9/original.png",
     technologies: ["React", "Redux", "Node.js", "MongoDB"],
     demoLink: "https://goldenloveconnections.com/",
-    codeLink: "https://github.com"
+    codeLink: "https://github.com",
+    isFeatured: false,
+
   },
   {
     title: "Parvin",
@@ -228,7 +302,8 @@ export const projectsData = [
     image: "https://res.cloudinary.com/ft-bounty/image/upload/c_fill,g_auto/v1747121028556/nvft-user-files/production/f4d68c35-0109-4d3d-a28a-7ab7f881256a/uploads/8264a1e1-0ecd-49e7-9ece-29cd1031724d/original.png",
     technologies: ["React", "Redux", "Node.js", "MongoDB"],
     demoLink: "https://play.google.com/store/apps/details?id=com.parvindatingapp&hl=en",
-    codeLink: "https://github.com"
+    codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Cry o Guys",
@@ -236,7 +311,8 @@ export const projectsData = [
     image: "https://res.cloudinary.com/ft-bounty/image/upload/c_fill,g_auto/v1747121065995/nvft-user-files/production/f4d68c35-0109-4d3d-a28a-7ab7f881256a/uploads/ddbd6a27-617b-405d-b474-7763e0b67f54/original.octet-stream",
     technologies: ["React", "Redux", "Node.js", "MongoDB"],
     demoLink: "https://play.google.com/store/apps/details?id=com.cryoguys&hl=en",
-    codeLink: "https://github.com"
+    codeLink: "https://github.com",
+    isFeatured: false,
   },
   {
     title: "Kori Hintin",
@@ -244,6 +320,8 @@ export const projectsData = [
     image: "https://res.cloudinary.com/ft-bounty/image/upload/c_fill,g_auto/v1747121332960/nvft-user-files/production/f4d68c35-0109-4d3d-a28a-7ab7f881256a/uploads/7277f7ab-f544-4800-a4e2-2420e4f65ae1/original.octet-stream",
     technologies: ["React", "Redux", "Node.js", "MongoDB"],
     demoLink: "https://react.customdev.solutions/koriHintin/admin/signin",
-    codeLink: "https://github.com"
+    codeLink: "https://github.com",
+    isFeatured: false,
+
   },
 ];

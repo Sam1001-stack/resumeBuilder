@@ -26,11 +26,23 @@ export default function ProjectsSection() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-                  {project.demoLink && (
+                  {
+                  project.isFeatured ? (
+                    <>
+                    <a href={project.v_demoLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
+                      <FaLink className="inline-block mr-1" /> Vendor Demo
+                    </a>
+                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
+                      <FaLink className="inline-block mr-1" /> Admin Demo
+                    </a>
+                    </>
+                 
+                  ) : (
                     <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
                       <FaLink className="inline-block mr-1" /> Demo
                     </a>
-                  )}
+                  )
+                  }
                   {/* {project.codeLink && (
                     <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
                       <FaGithub className="inline-block mr-1" /> Code
