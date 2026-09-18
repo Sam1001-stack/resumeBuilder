@@ -11,6 +11,7 @@ import marketplaceVendorImage from "@/assets/images/marketplace-vendor.png";
 import marketplaceAndroidImage from "@/assets/images/marketplace-android.png";
 import marketplaceIosImage from "@/assets/images/marketplace-ios.png";
 import automatedAccountingImage from "@/assets/images/automated-accounting.png";
+import fieldOpsImage from "@/assets/images/fieldops.png";
 
 export const profileData = {
   name: "Zaeem Uz Zafar",
@@ -107,6 +108,15 @@ export const projectsData = [
     technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Redux RTK Query", "Zustand", "Node.js", "Express", "MongoDB", "Redis", "JWT", "Socket.IO"],
     demoLink: "https://automated-accounting-and-datev-pre.vercel.app/",
     codeLink: "https://github.com/annikasassistant-byte/Automated-Accounting-And-DATEV-Pre-Booking-System-Frontend",
+    isFeatured: false,
+  },
+  {
+    title: "FieldOps",
+    description: "Multi-tenant SaaS for DACH Handwerk field service: Anfrage → Plantafel → Einsatz → Rechnung. Super Admin manages tenants across the platform; office staff plan jobs and billing; Monteur and Kunde use dedicated React Native apps for field work and customer tracking. Includes role-based portals (Super Admin, Büro, Buchhaltung, Monteur, Kunde), emergency service monitoring, Stripe subscription billing, and German UI.",
+    image: fieldOpsImage,
+    technologies: ["React", "Vite", "TypeScript", "Tailwind CSS", "TanStack Query", "Zustand", "Laravel", "PHP", "PostgreSQL", "Laravel Sanctum", "Stripe", "React Native"],
+    demoLink: "https://field-ops-main-web-app-iapv.vercel.app/",
+    codeLink: "https://github.com/Sam1001-stack/FieldOps-Main-Web-App",
     isFeatured: false,
   },
   {

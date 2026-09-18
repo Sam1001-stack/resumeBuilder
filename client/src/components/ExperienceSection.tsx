@@ -3,6 +3,13 @@ import { FaBriefcase } from "react-icons/fa";
 // Define work experience data based on the resume
 const experienceData = [
   {
+    title: "AI Software Engineer",
+    company: "Freelance",
+    location: "Berlin / Remote",
+    duration: "May 2026 — Present",
+    description: "Building full-stack products on MERN and PERN stacks with Node.js, Express.js, Python, and PHP. Implementing AI workflows and RAG pipelines, and working across ORMs including Mongoose, Prisma, and Eloquent. Delivering React.js dashboards and React Native mobile apps with real-time APIs over HTTP and WebSockets.",
+  },
+  {
     title: "Backend Engineer",
     company: "Salsoft Pvt Ltd",
     location: "Karachi",
