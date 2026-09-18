@@ -30,7 +30,7 @@ export const profileData = {
 export const skillsData = [
   {
     title: "Backend Development",
-    description: "Node.js, Express.js, Python , FastApi , RESTful APIs, WebSockets for real-time applications, MongoDB, MySQl, PostgreSQL."
+    description: "Node.js, Express.js, Python , FastApi , PHP, Laravel , RESTful APIs, WebSockets for real-time applications, MongoDB, MySQl, PostgreSQL."
   },
   {
     title: "Frontend Development",
