@@ -10,6 +10,7 @@ import marketplaceAdminImage from "@/assets/images/marketplace-admin.png";
 import marketplaceVendorImage from "@/assets/images/marketplace-vendor.png";
 import marketplaceAndroidImage from "@/assets/images/marketplace-android.png";
 import marketplaceIosImage from "@/assets/images/marketplace-ios.png";
+import automatedAccountingImage from "@/assets/images/automated-accounting.png";
 
 export const profileData = {
   name: "Zaeem Uz Zafar",
@@ -99,6 +100,15 @@ export const certificationData = [
 ]
 
 export const projectsData = [
+  {
+    title: "Automated Accounting",
+    description: "German DATEV pre-booking platform for buyback and marketplace businesses. Imports Bank, PayPal, JTL, Amazon, Back Market, and Refurbed data into MongoDB, runs system policies and human rules with open/conflict HITL queues, then exports reviewed bookings as DATEV EXTF. Includes accrual journals, payout reconciliation, ECB FX, and dual Admin/User portals with a German UI.",
+    image: automatedAccountingImage,
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Redux RTK Query", "Zustand", "Node.js", "Express", "MongoDB", "Redis", "JWT", "Socket.IO"],
+    demoLink: "https://automated-accounting-and-datev-pre.vercel.app/",
+    codeLink: "https://github.com/annikasassistant-byte/Automated-Accounting-And-DATEV-Pre-Booking-System-Frontend",
+    isFeatured: false,
+  },
   {
     title: "Marketplace Multi Vendor App",
     description: "A full multi-vendor marketplace merging Admin, Vendor, and native mobile apps (iOS & Android). Admins manage vendors, products, orders, payments, and commissions; vendors run their store with inventory, shipping, and earnings; customers shop via React Native apps with cart, checkout, wallet, and order tracking.",
