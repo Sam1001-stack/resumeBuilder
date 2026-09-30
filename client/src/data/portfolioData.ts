@@ -15,8 +15,8 @@ import fieldOpsImage from "@/assets/images/fieldops.png";
 
 export const profileData = {
   name: "Zaeem Uz Zafar",
-  title: "FullStack Engineer | Backend Engineer | MERN & PERN + Python Stack | Remote & Freelance | AI Tools",
-  bio: "Backend Engineer with expertise in MERN and PERN stack applications. Specialized in building robust backend systems using Node.js, Express.js, Python , FastApi  with MongoDB, MySQL, and PostgreSQL. Skilled in implementing both HTTP and WebSocket for real-time applications. Open to remote, part-time, and freelance opportunities across Europe and the USA, delivering scalable, efficient, and high-quality backend solutions.",
+  title: "FullStack Engineer | Backend Engineer | MERN & PERN + Php , Python Stack | Remote & Freelance | AI Tools",
+  bio: "Backend Engineer with expertise in MERN and PERN stack applications. Specialized in building robust backend systems using Node.js, Express.js, Python , Php , Laravel , FastApi  with MongoDB, MySQL, and PostgreSQL. Skilled in implementing both HTTP and WebSocket for real-time applications. Open to remote, part-time, and freelance opportunities across Europe and the USA, delivering scalable, efficient, and high-quality backend solutions.",
   email: "zaeem.zafar.ai@gmail.com",
   phone: "+49 178 336 72 52",
   location: "Berlin, Germany",
