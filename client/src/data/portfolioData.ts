@@ -109,6 +109,7 @@ export const projectsData = [
     demoLink: "https://automated-accounting-and-datev-pre.vercel.app/",
     codeLink: "https://github.com/annikasassistant-byte/Automated-Accounting-And-DATEV-Pre-Booking-System-Frontend",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "FieldOps",
@@ -117,7 +118,10 @@ export const projectsData = [
     technologies: ["React", "Vite", "TypeScript", "Tailwind CSS", "TanStack Query", "Zustand", "Laravel", "PHP", "PostgreSQL", "Laravel Sanctum", "Stripe", "React Native"],
     demoLink: "https://field-ops-main-web-app-iapv.vercel.app/",
     codeLink: "https://github.com/Sam1001-stack/FieldOps-Main-Web-App",
+    staffLink: "https://field-ops-staff-app-one.vercel.app/apps/field",
+    customerLink: "https://field-ops-customer-app-one.vercel.app/apps/customer",
     isFeatured: false,
+    isMobile: true,
   },
   {
     title: "Marketplace Multi Vendor App",
@@ -131,6 +135,7 @@ export const projectsData = [
     v_codeLink: "https://github.com/Sam1001-stack/Market_Place_Vendor",
     a_codeLink: "https://github.com/Sam1001-stack/Market_Place_Admin",
     isFeatured: true,
+    isMobile: true,
   },
   {
     title: "Financial Dashboard",
@@ -140,6 +145,7 @@ export const projectsData = [
     demoLink: "https://private-debt-investor-frontend.vercel.app/",
     codeLink: "https://github.com/annikasassistant-byte/Private-Debt-Investor-Frontend",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "AI CRM",
@@ -149,6 +155,7 @@ export const projectsData = [
     demoLink: "https://ai-crm-puce-psi.vercel.app/",
     codeLink: "https://github.com/Sam1001-stack/AI-CRM",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "AI Ecommerce Enterprise",
@@ -158,6 +165,7 @@ export const projectsData = [
     demoLink: "https://ai-ecommerce-enterprices.vercel.app",
     codeLink: "https://github.com/Sam1001-stack/Ai-Ecommerce-Enterprices",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Warehouse Logistics",
@@ -167,6 +175,7 @@ export const projectsData = [
     demoLink: "https://warehouse-logistics-two.vercel.app",
     codeLink: "https://github.com/Sam1001-stack/Warehouse-Logistics",
     isFeatured: false,
+    isMobile: false,
   },  
   {
     title: "TalentSync AI",
@@ -176,6 +185,7 @@ export const projectsData = [
     demoLink: "https://german-resume-ai-builder.vercel.app/de",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Syrena Date",
@@ -185,6 +195,7 @@ export const projectsData = [
     demoLink: "https://react.customdev.solutions/syrenadate/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Chill N Park",
@@ -194,6 +205,7 @@ export const projectsData = [
     demoLink: "https://react.customdev.solutions/chill_n_park/admin/signin",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Cardii",
@@ -203,6 +215,7 @@ export const projectsData = [
     demoLink: "https://react.customdev.solutions/cardii/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "100Square Games",
@@ -212,6 +225,7 @@ export const projectsData = [
     demoLink: "https://100squaregames.example.com/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Petwarehouse",
@@ -221,6 +235,7 @@ export const projectsData = [
     demoLink: "https://petwarehouse.example.com/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Genematric",
@@ -230,6 +245,7 @@ export const projectsData = [
     demoLink: "https://genematric.example.com/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Eve Doctor",
@@ -239,6 +255,7 @@ export const projectsData = [
     demoLink: "https://evedoctor.example.com/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "The BMET Medical Posting Community",
@@ -248,6 +265,7 @@ export const projectsData = [
     demoLink: "https://bmetmedical.example.com/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Center Piece",
@@ -257,6 +275,7 @@ export const projectsData = [
     demoLink: "https://react.customdev.solutions/centerpiece/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
 
   },
     {
@@ -267,6 +286,7 @@ export const projectsData = [
     demoLink: "https://react.customdev.solutions/168ecommerce/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Predivauth",
@@ -276,6 +296,7 @@ export const projectsData = [
     demoLink: "https://predivauthmarketplace.com/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
 
   },
   {
@@ -286,6 +307,7 @@ export const projectsData = [
     demoLink: "https://instapet.co/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Pet Care",
@@ -295,6 +317,7 @@ export const projectsData = [
     demoLink: "https://react.customdev.solutions/dogcare/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
 
   },
   {
@@ -305,6 +328,7 @@ export const projectsData = [
     demoLink: "https://react.customdev.solutions/laundry/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
   },
   {
     title: "Golden Love",
@@ -314,6 +338,7 @@ export const projectsData = [
     demoLink: "https://goldenloveconnections.com/",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: false,
 
   },
   {
@@ -324,6 +349,7 @@ export const projectsData = [
     demoLink: "https://play.google.com/store/apps/details?id=com.parvindatingapp&hl=en",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: true,
   },
   {
     title: "Cry o Guys",
@@ -333,6 +359,7 @@ export const projectsData = [
     demoLink: "https://play.google.com/store/apps/details?id=com.cryoguys&hl=en",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: true,
   },
   {
     title: "Kori Hintin",
@@ -342,6 +369,7 @@ export const projectsData = [
     demoLink: "https://react.customdev.solutions/koriHintin/admin/signin",
     codeLink: "https://github.com",
     isFeatured: false,
+    isMobile: true,
 
   },
 ];

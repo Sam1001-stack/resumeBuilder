@@ -43,6 +43,16 @@ export default function ProjectsSection() {
                     </a>
                   )
                   }
+                  {project.isMobile && !project.isFeatured && (
+                    <>
+                    <a href={project.staffLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
+                      <FaLink className="inline-block mr-1" /> Staff Demo
+                    </a>
+                    <a href={project.customerLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
+                      <FaLink className="inline-block mr-1" /> Customer Demo
+                    </a>
+                    </>
+                  )}
                   {/* {project.codeLink && (
                     <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
                       <FaGithub className="inline-block mr-1" /> Code
