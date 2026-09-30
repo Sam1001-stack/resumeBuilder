@@ -134,6 +134,7 @@ export const projectsData = [
     codeLink: "https://github.com/Sam1001-stack/Market_Place_User_Mobile_App",
     v_codeLink: "https://github.com/Sam1001-stack/Market_Place_Vendor",
     a_codeLink: "https://github.com/Sam1001-stack/Market_Place_Admin",
+    customerLink: "https://market-place-admin-orcin.vercel.app/app-screenshots",
     isFeatured: true,
     isMobile: true,
   },
