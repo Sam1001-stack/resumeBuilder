@@ -33,6 +33,8 @@ export const profileData = {
   socialLinks: {
     github: "https://github.com/Sam1001-stack",
     linkedin: "https://www.linkedin.com/in/zaeem-uz-zafar-02bb01190",
+    youtube: "https://youtu.be/uJQh7ww6L7k?si=n6nvtpNIKvTMsABh",
+    upwork: "https://www.upwork.com/freelancers/~019a841faa9754d774",
     twitter: "https://x.com/zaeemuzzafar/status/1528627024046264320",
   },
 };

@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaYoutube, FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { SiUpwork } from "react-icons/si";
 import { profileData } from "@/data/portfolioData";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -46,6 +47,7 @@ export default function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-primary text-2xl"
+                aria-label="GitHub"
               >
                 <FaGithub />
               </a>
@@ -54,8 +56,27 @@ export default function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-primary text-2xl"
+                aria-label="LinkedIn"
               >
                 <FaLinkedin />
+              </a>
+              <a
+                href={profileData.socialLinks.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-primary text-2xl"
+                aria-label="YouTube"
+              >
+                <FaYoutube />
+              </a>
+              <a
+                href={profileData.socialLinks.upwork}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-primary text-2xl"
+                aria-label="Upwork"
+              >
+                <SiUpwork />
               </a>
             </div>
           </div>

@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaYoutube, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { SiUpwork } from "react-icons/si";
 import { profileData } from "@/data/portfolioData";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -47,6 +48,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-primary transition-colors"
+                aria-label="GitHub"
               >
                 <FaGithub className="text-2xl" />
               </a>
@@ -55,8 +57,27 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-primary transition-colors"
+                aria-label="LinkedIn"
               >
                 <FaLinkedin className="text-2xl" />
+              </a>
+              <a
+                href={profileData.socialLinks.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-primary transition-colors"
+                aria-label="YouTube"
+              >
+                <FaYoutube className="text-2xl" />
+              </a>
+              <a
+                href={profileData.socialLinks.upwork}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-primary transition-colors"
+                aria-label="Upwork"
+              >
+                <SiUpwork className="text-2xl" />
               </a>
             </div>
             <p className="text-gray-400">
