@@ -23,6 +23,7 @@ export const ui = {
     staffDemo: { en: "Staff Demo", de: "Mitarbeiter-Demo" },
     customerDemo: { en: "Customer Demo", de: "Kunden-Demo" },
     experienceLetter: { en: "Experience Letter", de: "Arbeitszeugnis" },
+    downloadResume: { en: "Download Resume (PDF)", de: "Lebenslauf herunterladen (PDF)" },
   },
   footer: {
     rights: {
@@ -70,6 +71,7 @@ export function getUi(lang: Lang) {
       staffDemo: ui.buttons.staffDemo[lang],
       customerDemo: ui.buttons.customerDemo[lang],
       experienceLetter: ui.buttons.experienceLetter[lang],
+      downloadResume: ui.buttons.downloadResume[lang],
     },
     footer: {
       rights: ui.footer.rights[lang],

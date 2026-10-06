@@ -1,10 +1,33 @@
-import { FaGithub, FaLinkedin, FaYoutube, FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { useState } from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaYoutube,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaFilePdf,
+} from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 import { profileData } from "@/data/portfolioData";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { downloadResumePdf } from "@/lib/generateResumePdf";
 
 export default function HeroSection() {
-  const { t } = useLanguage();
+  const { t, ui, lang } = useLanguage();
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownloadResume = async () => {
+    if (isDownloading) return;
+    setIsDownloading(true);
+    try {
+      await downloadResumePdf(lang);
+    } catch (error) {
+      console.error("Resume PDF download failed:", error);
+    } finally {
+      setIsDownloading(false);
+    }
+  };
 
   return (
     <section id="about" className="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
@@ -41,7 +64,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="flex space-x-4">
+            <div className="flex items-center space-x-4">
               <a
                 href={profileData.socialLinks.github}
                 target="_blank"
@@ -78,6 +101,16 @@ export default function HeroSection() {
               >
                 <SiUpwork />
               </a>
+              <button
+                type="button"
+                onClick={handleDownloadResume}
+                disabled={isDownloading}
+                className="text-gray-700 hover:text-primary text-2xl disabled:opacity-50"
+                aria-label={ui.buttons.downloadResume}
+                title={ui.buttons.downloadResume}
+              >
+                <FaFilePdf />
+              </button>
             </div>
           </div>
         </div>
