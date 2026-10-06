@@ -17,8 +17,8 @@ import type { LocalizedString } from "@/i18n/types";
 export const profileData = {
   name: "Zaeem Uz Zafar",
   title: {
-    en: "FullStack Engineer | Backend Engineer | MERN & PERN + Php , Python Stack | React Native | Remote & Freelance | AI Tools",
-    de: "Full-Stack-Engineer | Backend-Engineer | MERN & PERN + PHP, Python-Stack | React Native | Remote & Freelance | KI-Tools",
+    en: "FullStack Engineer | MERN & PERN + Php , Python Stack | React Native | Remote & Freelance | AI Tools",
+    de: "Full-Stack-Engineer | MERN & PERN + PHP, Python-Stack | React Native | Remote & Freelance | KI-Tools",
   } satisfies LocalizedString,
   bio: {
     en: "Backend Engineer with expertise in MERN and PERN stack applications. Specialized in building robust backend systems using Node.js, Express.js, Python , Php , Laravel , FastApi  with MongoDB, MySQL, and PostgreSQL. Skilled in React Native mobile apps for iOS and Android, and implementing both HTTP and WebSocket for real-time applications. Open to remote, part-time, and freelance opportunities across Europe and the USA, delivering scalable, efficient, and high-quality backend solutions.",
