@@ -13,8 +13,9 @@ export default function ExperienceSection() {
         <div className="space-y-8">
           {experienceData.map((exp, index) => (
             <div
+              id={`experience-${index}`}
               key={index}
-              className="bg-secondary rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-secondary rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow scroll-mt-24"
             >
               <div className="flex flex-col md:flex-row justify-between mb-4">
                 <div>

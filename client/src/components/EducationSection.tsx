@@ -12,8 +12,9 @@ export default function EducationSection() {
         <div className="space-y-8">
           {educationData.map((edu, index) => (
             <div
+              id={`education-${index}`}
               key={index}
-              className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow scroll-mt-24"
             >
               <div className="flex flex-col md:flex-row justify-between mb-4">
                 <h3 className="text-xl font-bold">{t(edu.degree)}</h3>

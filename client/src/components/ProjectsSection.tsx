@@ -1,20 +1,26 @@
 import { FaLink } from "react-icons/fa";
 import { projectsData, wordpressProjectsData } from "@/data/portfolioData";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { projectElementId } from "@/lib/siteSearch";
 
 type ProjectItem = (typeof projectsData)[number] | (typeof wordpressProjectsData)[number];
 
 function ProjectCard({
   project,
+  kind,
   t,
   ui,
 }: {
   project: ProjectItem;
+  kind: "custom" | "wordpress";
   t: (value: { en: string; de: string } | string) => string;
   ui: ReturnType<typeof useLanguage>["ui"];
 }) {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+    <div
+      id={projectElementId(kind, project.title)}
+      className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow scroll-mt-24"
+    >
       <img
         src={project.image}
         alt={`${t(project.title)} screenshot`}
@@ -101,24 +107,36 @@ export default function ProjectsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-12 text-center">{ui.sections.projects}</h2>
 
-        <div className="mb-16">
+        <div id="custom-apps" className="mb-16 scroll-mt-24">
           <h3 className="text-2xl font-semibold mb-8 text-center text-primary">
             {ui.sections.customApps}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projectsData.map((project, index) => (
-              <ProjectCard key={`custom-${index}`} project={project} t={t} ui={ui} />
+              <ProjectCard
+                key={`custom-${index}`}
+                project={project}
+                kind="custom"
+                t={t}
+                ui={ui}
+              />
             ))}
           </div>
         </div>
 
-        <div>
+        <div id="wordpress-apps" className="scroll-mt-24">
           <h3 className="text-2xl font-semibold mb-8 text-center text-primary">
             {ui.sections.wordpressApps}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {wordpressProjectsData.map((project, index) => (
-              <ProjectCard key={`wordpress-${index}`} project={project} t={t} ui={ui} />
+              <ProjectCard
+                key={`wordpress-${index}`}
+                project={project}
+                kind="wordpress"
+                t={t}
+                ui={ui}
+              />
             ))}
           </div>
         </div>

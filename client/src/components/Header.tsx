@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SiteSearch from "@/components/SiteSearch";
 import { useLanguage } from "@/i18n/LanguageContext";
 import type { Lang } from "@/i18n/types";
 
@@ -54,8 +55,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
+        <div className="flex justify-between items-center gap-4 py-4">
+          <div className="flex items-center shrink-0">
             <a
               href="#"
               className="text-2xl font-bold text-primary"
@@ -69,7 +70,9 @@ export default function Header() {
             </a>
           </div>
 
-          <nav className="hidden md:flex items-center space-x-8">
+          <SiteSearch className="hidden sm:block flex-1 mx-2 lg:mx-6" />
+
+          <nav className="hidden lg:flex items-center space-x-6 shrink-0">
             {navItems.map((item) => (
               <a
                 key={item.id}
@@ -86,17 +89,22 @@ export default function Header() {
             <LanguageSelect />
           </nav>
 
-          <div className="md:hidden flex items-center gap-2">
-            <LanguageSelect />
+          <div className="lg:hidden flex items-center gap-2 shrink-0">
+            <LanguageSelect className="hidden sm:inline-flex" />
             <Button variant="ghost" onClick={toggleMobileMenu} size="icon">
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
 
+        <div className="sm:hidden pb-3">
+          <SiteSearch />
+        </div>
+
         {isMobileMenuOpen && (
-          <div className="md:hidden pb-4">
+          <div className="lg:hidden pb-4">
             <div className="flex flex-col space-y-3">
+              <LanguageSelect className="sm:hidden" />
               {navItems.map((item) => (
                 <a
                   key={item.id}

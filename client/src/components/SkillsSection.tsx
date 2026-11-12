@@ -45,8 +45,9 @@ export default function SkillsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillsData.map((skill) => (
             <div
+              id={`skill-${skill.id}`}
               key={skill.id}
-              className="bg-secondary rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-secondary rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow scroll-mt-24"
             >
               {getIconForSkill(skill.id)}
               <h3 className="text-xl font-bold mb-2">{t(skill.title)}</h3>

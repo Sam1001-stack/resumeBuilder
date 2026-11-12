@@ -33,6 +33,15 @@ export const ui = {
       de: "Alle Rechte vorbehalten.",
     },
   },
+  search: {
+    label: { en: "Search portfolio", de: "Portfolio durchsuchen" },
+    placeholder: {
+      en: "Search skills, projects, experience…",
+      de: "Skills, Projekte, Erfahrung suchen…",
+    },
+    noResults: { en: "No matching content", de: "Kein passender Inhalt" },
+    clear: { en: "Clear search", de: "Suche löschen" },
+  },
   language: {
     label: { en: "Language", de: "Sprache" },
     de: { en: "German", de: "Deutsch" },
@@ -79,6 +88,12 @@ export function getUi(lang: Lang) {
     },
     footer: {
       rights: ui.footer.rights[lang],
+    },
+    search: {
+      label: ui.search.label[lang],
+      placeholder: ui.search.placeholder[lang],
+      noResults: ui.search.noResults[lang],
+      clear: ui.search.clear[lang],
     },
     language: {
       label: ui.language.label[lang],
