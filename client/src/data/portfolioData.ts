@@ -17,12 +17,12 @@ import type { LocalizedString } from "@/i18n/types";
 export const profileData = {
   name: "Zaeem Uz Zafar",
   title: {
-    en: "FullStack Engineer | MERN & PERN + Php , Python Stack | React Native | Remote & Freelance | AI Tools",
-    de: "Full-Stack-Engineer | MERN & PERN + PHP, Python-Stack | React Native | Remote & Freelance | KI-Tools",
+    en: "FullStack Engineer | Custom Apps (MERN & PERN + PHP, Python) | WordPress & WooCommerce | React Native | Remote & Freelance | AI Tools",
+    de: "Full-Stack-Engineer | Custom Apps (MERN & PERN + PHP, Python) | WordPress & WooCommerce | React Native | Remote & Freelance | KI-Tools",
   } satisfies LocalizedString,
   bio: {
-    en: "Backend Engineer with expertise in MERN and PERN stack applications. Specialized in building robust backend systems using Node.js, Express.js, Python , Php , Laravel , FastApi  with MongoDB, MySQL, and PostgreSQL. Skilled in React Native mobile apps for iOS and Android, and implementing both HTTP and WebSocket for real-time applications. Open to remote, part-time, and freelance opportunities across Europe and the USA, delivering scalable, efficient, and high-quality backend solutions.",
-    de: "Backend-Engineer mit Expertise in MERN- und PERN-Stack-Anwendungen. Spezialisiert auf robuste Backend-Systeme mit Node.js, Express.js, Python, PHP, Laravel und FastAPI sowie MongoDB, MySQL und PostgreSQL. Erfahrung mit React-Native-Apps für iOS und Android sowie HTTP und WebSockets für Echtzeitanwendungen. Offen für Remote-, Teilzeit- und Freelance-Möglichkeiten in Europa und den USA – skalierbar, effizient und hochwertig.",
+    en: "Full-stack engineer building custom web and mobile apps on MERN/PERN stacks with Node.js, Express.js, Python, PHP, Laravel, and FastAPI, plus MongoDB, MySQL, and PostgreSQL. Also delivers WordPress and WooCommerce sites for e-commerce, magazines, agencies, and service businesses. Skilled in React Native for iOS and Android, and real-time apps with HTTP and WebSockets. Open to remote, part-time, and freelance work across Europe and the USA.",
+    de: "Full-Stack-Engineer für Custom Web- und Mobile-Apps auf MERN-/PERN-Stacks mit Node.js, Express.js, Python, PHP, Laravel und FastAPI sowie MongoDB, MySQL und PostgreSQL. Zusätzlich WordPress- und WooCommerce-Websites für E-Commerce, Magazine, Agenturen und Dienstleister. Erfahrung mit React Native für iOS und Android sowie Echtzeit-Apps mit HTTP und WebSockets. Offen für Remote-, Teilzeit- und Freelance-Arbeit in Europa und den USA.",
   } satisfies LocalizedString,
   email: "zaeem.zafar.ai@gmail.com",
   phone: "+49 178 336 72 52",
@@ -587,5 +587,62 @@ export const projectsData = [
     codeLink: "https://github.com",
     isFeatured: false,
     isMobile: true,
+  },
+];
+
+export const wordpressProjectsData = [
+  {
+    title: { en: "Our Green Story", de: "Our Green Story" },
+    description: {
+      en: "Dutch WooCommerce store for GreenStory — reusable notebooks, whiteboards, and sticky planners (GreenBook & GreenStory boards). Product catalog, Black Friday campaigns, Trustpilot reviews, custom GreenBook personalization (logo & branding), and a community-focused Dutch UI built on WordPress + Elementor.",
+      de: "Niederländischer WooCommerce-Shop für GreenStory — wiederverwendbare Notizbücher, Whiteboards und Sticky-Planner (GreenBook & GreenStory-Boards). Produktkatalog, Black-Friday-Kampagnen, Trustpilot-Bewertungen, GreenBook-Personalisierung (Logo & Branding) und community-orientierte niederländische UI auf WordPress + Elementor.",
+    },
+    image:
+      "https://ourgreenstory.com/nl/wp-content/uploads/bf2026/bf2026-cat-bestseller-desktop-v2-300x300.webp",
+    technologies: ["WordPress", "WooCommerce", "Elementor", "PHP", "JavaScript"],
+    demoLink: "https://ourgreenstory.com/nl/",
+    codeLink: "https://github.com",
+    isFeatured: false,
+    isMobile: false,
+  },
+  {
+    title: { en: "Apex Magazine", de: "Apex Magazine" },
+    description: {
+      en: "UK online magazine on WordPress covering celebrities, sports, tech, finance, cybersecurity, and lifestyle. Article categories, author posts, featured stories, and contact flow (apexmagazine7@gmail.com) with a content-first editorial layout.",
+      de: "Britisches Online-Magazin auf WordPress zu Celebrities, Sport, Tech, Finanzen, Cybersecurity und Lifestyle. Artikelkategorien, Autorenbeiträge, Featured Stories und Kontaktflow (apexmagazine7@gmail.com) mit editorialem, inhaltsorientiertem Layout.",
+    },
+    image: "https://apexmagazine.co.uk/wp-content/uploads/2026/04/Kate-Abdo-Husband.jpg",
+    technologies: ["WordPress", "PHP", "Custom Theme", "SEO"],
+    demoLink: "https://apexmagazine.co.uk",
+    codeLink: "https://github.com",
+    isFeatured: false,
+    isMobile: false,
+  },
+  {
+    title: { en: "Fast Digitizer", de: "Fast Digitizer" },
+    description: {
+      en: "WordPress business site for embroidery digitizing services (Chicago). Service pages for embroidery digitizing, vector designing, graphic design, and web development; pricing packages (Starter / Vector / Web); before/after samples; client testimonials; live chat and contact (+1 708 628-5612).",
+      de: "WordPress-Business-Website für Stickerei-Digitalisierungs-Services (Chicago). Service-Seiten für Digitalisierung, Vector Design, Grafikdesign und Webentwicklung; Preis-Pakete (Starter / Vector / Web); Before/After-Samples; Kundenstimmen; Live-Chat und Kontakt (+1 708 628-5612).",
+    },
+    image:
+      "https://fastdigitizer.com/wp-content/uploads/2024/01/Left-Chest-Logo-Image-Hotspot-768x768-1.png",
+    technologies: ["WordPress", "PHP", "Elementor", "JavaScript"],
+    demoLink: "https://fastdigitizer.com/",
+    codeLink: "https://github.com",
+    isFeatured: false,
+    isMobile: false,
+  },
+  {
+    title: { en: "GFXNext", de: "GFXNext" },
+    description: {
+      en: "Creative digital agency WordPress site for GFXNext (UK & Pakistan). Showcases graphic design, brand identity, company profiles, 3D visualization/rendering, UI/UX, CMS website development, and social media services — with portfolio gallery, client reviews, and enquiry contact.",
+      de: "WordPress-Website der Creative Digital Agency GFXNext (UK & Pakistan). Präsentiert Graphic Design, Brand Identity, Company Profiles, 3D-Visualisierung/Rendering, UI/UX, CMS-Website-Entwicklung und Social-Media-Services — inkl. Portfolio-Galerie, Kundenstimmen und Anfrage-Kontakt.",
+    },
+    image: "https://gfxnext.com/wp-content/uploads/2025/02/smoke-shop-01-Copy.jpg",
+    technologies: ["WordPress", "PHP", "CMS", "Elementor", "JavaScript"],
+    demoLink: "http://gfxnext.com/",
+    codeLink: "https://github.com",
+    isFeatured: false,
+    isMobile: false,
   },
 ];
